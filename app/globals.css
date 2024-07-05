@@ -30,6 +30,12 @@ a {
   color: var(--secondaryColor);
 }
 
+.navLink:hover {
+
+  transform: translateY(-2px);
+  transition: transform .4s ease;
+}
+
 /* main>div {
   display: flex;
   justify-content: space-between;

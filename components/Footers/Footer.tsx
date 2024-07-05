@@ -12,8 +12,8 @@ export function Footer() {
         <div className="aboutUs">
           <h5>ჩვენს შესახებ</h5>
           <p>
-            ლორემ იპსუმ ლორემ იპსუმ ლორემ იპსუმ ლორემ იპსუმ ლორემ იპსუმ ლორემ იპსუმ
-            ლორემ იპსუმ ლორემ იპსუმ ლორემ იპსუმ ლორემ იპსუმ ლორემ იპსუმ ლორემ იპსუმ
+            აღმოაჩინე თავისთვის სასურველი მენტორები და ტუტორები, მიიღე ინფორმაცია მათ შესახებ,
+            მარტივად დაგეგმე გაკვეთილები და მიიღე ხარისხიანი განათლება ჩვენთან.
           </p>
           <div className="aboutUs_social">
             <IconButton href="/" color="primary">
@@ -33,7 +33,6 @@ export function Footer() {
             <nav>
               <NavLink href="/about">ჩვენს შესახებ</NavLink>
               <NavLink href="/mentors">მენტორები</NavLink>
-              <NavLink href="/contact">დაგვიკავშირდით</NavLink>
             </nav>
           </div>
           <Button className="auth_link" variant="contained" href="/" sx={{ backgroundColor: "var(--thirdColor)" }}>შესვლა</Button>

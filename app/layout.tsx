@@ -6,10 +6,9 @@ import Layout from "@/components/Layouts/Layout";
 const noto_sans_georgia = Noto_Sans_Georgian({ subsets: ["georgian", "latin"], weight: ["400", "500", "600", "700"] })
 
 export const metadata: Metadata = {
-  title: "რეპეტიტორი",
-  description: "აირჩიე რეპეტიტორი",
+  title: "EduMate",
+  description: "აირჩიე შენთვის საუკეთესო ტუტორი",
 };
-
 
 export default function RootLayout({
   children,

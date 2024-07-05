@@ -82,6 +82,15 @@ export function MentorsFilters() {
         <MenuItem value="მათემატიკა">
           მათემატიკა
         </MenuItem>
+        <MenuItem value="ბიოლოგია">
+          ბიოლოგია
+        </MenuItem>
+        <MenuItem value="გეოგრაფია">
+          გეოგრაფია
+        </MenuItem>
+        <MenuItem value="ფიზიკა">
+          ფიზიკა
+        </MenuItem>
       </TextField>
     </div>
   )

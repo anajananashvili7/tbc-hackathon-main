@@ -7,10 +7,17 @@ import { Keyboard, Navigation, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { MotionDiv } from "../MotionDiv/MotionDiv";
+import { SliderAnimation } from "@/services/animations";
 
 export function LandingSlider({ tutors }: { tutors: ITutor[] }) {
   return (
-    <>
+    <MotionDiv
+      initial="initial"
+      whileInView='animate'
+      variants={SliderAnimation}
+      viewport={{ once: true }}
+    >
       <section className="landingSlider">
         <h1>თვის საუკეთესო მენტორები</h1>
 
@@ -42,6 +49,6 @@ export function LandingSlider({ tutors }: { tutors: ITutor[] }) {
           </Swiper>
         </div>
       </section>
-    </>
+    </MotionDiv>
   )
 }

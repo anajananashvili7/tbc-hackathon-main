@@ -6,7 +6,8 @@ import { Rating } from '@mui/material';
 import { MentorButtons } from './MentorButtons';
 
 export function MentorCard({ item }: { item: ITutor }) {
-  const { photo, user, city, subject, id } = item;
+  const { photo, user, city, subject, id, average_rating } = item;
+
   return (
     <Card sx={{ maxWidth: 300, width: 300 }}>
       <CardMedia
@@ -18,7 +19,7 @@ export function MentorCard({ item }: { item: ITutor }) {
         <Typography gutterBottom variant="h5" component="div">
           {`${user.first_name}`}
         </Typography>
-        <Rating name="read-only" value={4.7} precision={0.5} size='small' readOnly />
+        <Rating name="read-only" value={average_rating} precision={0.5} size='small' readOnly />
         <Typography variant="subtitle2" m="0.5rem 0">
           {`ქალაქი: ${city}`}
         </Typography>

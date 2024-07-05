@@ -3,7 +3,7 @@ import { getAnyData } from "@/services/utils";
 import { LandingSlider } from "@/components/Sliders/LandingSlider";
 
 export default async function Home() {
-  const data = (await getAnyData<ITutor[]>("https://freegrand.pythonanywhere.com/api/tutor")).slice(0, 5);
+  const data = (await getAnyData<ITutor[]>("https://freegrand.pythonanywhere.com/api/tutor", { next: { revalidate: 3600 } })).slice(0, 5);
 
   return (
     <>

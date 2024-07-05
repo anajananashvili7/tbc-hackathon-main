@@ -16,7 +16,7 @@ export function Burger() {
 
   return (
     <div className="burger_container">
-      <IconButton title="მენიუ" className="burgerButtonOpen" onClick={toggleBurger} color="primary">
+      <IconButton title="მენიუ" className="burgerButtonOpen" onClick={toggleBurger} color="primary" sx={{ padding: "0" }}>
         <Menu />
       </IconButton>
       <div className={isOpen ? "burgerOverlay" : "burgerOverlay burgerOverlay_close"} >
@@ -29,7 +29,6 @@ export function Burger() {
         <nav >
           <NavLink href="/about" onClick={toggleBurger}>ჩვენს შესახებ</NavLink>
           <NavLink href="/mentors" onClick={toggleBurger}>მენტორები</NavLink>
-          <NavLink href="/contact" onClick={toggleBurger}>დაგვიკავშირდით</NavLink>
         </nav>
       </div>
     </div>

@@ -12,4 +12,5 @@ interface ITutor {
   average_rating: number,
   photo: string,
   description?: string,
+  address?: string,
 }

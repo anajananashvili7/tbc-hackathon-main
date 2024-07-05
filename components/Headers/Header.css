@@ -25,6 +25,16 @@ header .burger_container {
   display: none;
 }
 
+.logo a {
+  display: block;
+  height: 32px;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
 @media(max-width:960px) {
 
   header .burger_container {
