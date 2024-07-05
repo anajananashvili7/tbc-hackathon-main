@@ -1,0 +1,15 @@
+.mentors_background {
+  width: 100%;
+  height: 35rem;
+  position: relative;
+}
+
+.mentors_background img {
+  object-fit: cover;
+  object-position: 50% 80%;
+}
+
+.mentors .pagination {
+  display: flex;
+  justify-content: center;
+}

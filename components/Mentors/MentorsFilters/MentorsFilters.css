@@ -1,0 +1,43 @@
+.mentors_filters {
+  max-width: var(--max-width);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.mentors_filters .MuiFormLabel-root {
+  color: var(--primaryColor);
+}
+
+.mentors_filters .MuiOutlinedInput-root input,
+.mentors_filters .MuiOutlinedInput-root fieldset,
+.mentors_filters .MuiOutlinedInput-root.Mui-focused fieldset,
+.mentors_filters .MuiOutlinedInput-root:hover fieldset {
+  border-color: var(--primaryColor);
+  color: var(--primaryColor);
+  outline-color: var(--primaryColor);
+}
+
+.mentors_filters .select {
+  max-width: 250px;
+  width: 100%;
+}
+
+.mentors_filters .select svg {
+  fill: var(--primaryColor);
+}
+
+.mentors_filters .MuiSelect-select {
+  color: var(--primaryColor);
+}
+
+@media(max-width:1024px) {
+  .mentors_filters {
+    padding: 0 1rem;
+  }
+}

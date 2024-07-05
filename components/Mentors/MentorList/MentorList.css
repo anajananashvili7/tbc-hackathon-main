@@ -1,0 +1,13 @@
+.mentorList {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.mentor_grid {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}

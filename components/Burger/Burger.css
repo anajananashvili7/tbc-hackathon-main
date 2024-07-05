@@ -1,0 +1,50 @@
+.burgerOverlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /*linear background to off transition on dark mode change, color will be still same*/
+  background: linear-gradient(to bottom right, var(--background), var(--background) 100%);
+  transition: 0.7s ease-in;
+  z-index: 2;
+}
+
+.burgerButtonOpen,
+.burgerButtonClose {
+  display: flex;
+  align-items: center;
+}
+
+.burgerButtonClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.burger_menuButtons {
+  align-items: center;
+}
+
+.burgerOverlay_close {
+  left: 100%;
+}
+
+.burger_container .navLink_active,
+.burger_container .nav_list .navLink_active {
+  border-bottom: 1px solid var(--secondaryColor);
+}
+
+.burger_container nav {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.burger_container nav a {
+  margin: 0.5rem 0;
+}
